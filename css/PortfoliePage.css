@@ -34,10 +34,7 @@ background-color:red;
 
 @media screen and (max-width:767px){
 
-    :root{
-        --main-headerfont: 'Roboto Slab', serif;
-        }
-        
+    
         *{
          box-sizing: border-box;   
         }
@@ -224,17 +221,60 @@ align-items: center;
 }
 
 .portfolio-box{
-width: 40%;
-height: 200px;
+width: 70%;
+height: auto;
 border: 2px solid crimson;  
 background: #FFFFFF;
-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.455), 0 1px 2px rgba(0,0,0,0.24);
 transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 margin: 20px 10px;
+display: flex;
+flex-flow: column;
+font-family: var(--main-text-font);
 }
 
 .portfolio-box:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);  
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.87), 0 10px 10px rgba(0, 0, 0, 0.898);  
 
+}
+
+
+.portfolio-box img{
+width: 99.99%; 
+}
+
+.CTAProjects{
+font-family: var(--main-button-font); 
+padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 0.5rem;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    transition-property: background-color, color;
+    margin: 0px 5px;
+    font-family: var(--main-button-font);
+}
+
+.CTAProjects:hover{
+    color: black;
+    background-color: crimson;   
+}
+
+.headingProjects{
+ font-family: var(--main-header-font);  
+ margin-left: 4%;
+}
+
+.projectsText{
+ font-family: var(--main-text-font);  
+ font-size: 20px; 
+ margin: 0 4%;
+}
+
+.black {
+ font-weight: bold;
 }
 
