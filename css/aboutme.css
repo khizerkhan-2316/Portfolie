@@ -19,35 +19,11 @@
 body{
 margin: 0;
 padding: 0;   
-background-color:red; 
+background-color: black; 
 
 }
-
-
-
-
-@media only screen and (min-width: 1024px) {
-  
-    
-}
-
 
 @media screen and (max-width:767px){
-
-    
-        *{
-         box-sizing: border-box;   
-        }
-        
-        body{
-        margin: 0;
-        padding: 0;   
-        background-color: black;
-        
-        }
-        
-        
-
     .menu li, a {
         color: white;
         list-style: none;
@@ -157,125 +133,5 @@ background-color:red;
         max-height: 350px;    
         }
 
-
-.picture{
- width: 100%;
- height: auto;
- display: flex;
- flex-flow: row;
- align-items: flex-end;
-}
-
-#backgroundImg{
-width: 99.99%;
-height: auto;
-}
-
-#buttons-box{
-width: 100%;
-height: 100px;
-display: flex;
-flex-flow: row wrap;
-justify-content: center;
-align-items: center;
-}
-
-#buttons-box button{
-    padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid crimson;
-    font-size: 0.5rem;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    margin-top: 30px;
-    transition: .3s ease background-color;
-    transition-property: background-color, color;
-    margin: 0px 5px;
-    font-family: var(--main-button-font);
-
-}
-
-#buttons-box button:hover{
-    color: black;
-    background-color: crimson; 
-}
-
-.heading{
- font-family: var(--main-header-font);   
- text-align: center;
- font-size: 1.3rem;
- color: white;
- display: none;
-
-}
-
-}
-
-.portfoli-container{
-width: 100%;
-height: auto;
-display: flex;
-flex-flow: row wrap;
-justify-content: center;
-align-items: center;
-display: none;
-}
-
-.portfolio-box{
-width: 70%;
-height: auto;
-border: 2px solid white;
-background: #FFFFFF;
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.455), 0 1px 2px rgba(0,0,0,0.24);
-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-margin: 20px 10px;
-display: flex;
-flex-flow: column;
-font-family: var(--main-text-font);
-}
-
-.portfolio-box:hover{
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.87), 0 10px 10px rgba(0, 0, 0, 0.898);  
-
-}
-
-
-.portfolio-box img{
-width: 99.99%; 
-}
-
-.CTAProjects{
-font-family: var(--main-button-font); 
-padding: 10px 30px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid crimson;
-    font-size: 0.5rem;
-    letter-spacing: .1rem;
-    margin-top: 30px;
-    transition: .3s ease background-color;
-    transition-property: background-color, color;
-    margin: 0px 5px;
-    font-family: var(--main-button-font);
-}
-
-.CTAProjects:hover{
-    color: black;
-    background-color: crimson;   
-}
-
-.headingProjects{
- font-family: var(--main-header-font);  
- margin-left: 4%;
-}
-
-.projectsText{
- font-family: var(--main-text-font);  
- margin: 0 4%;
-}
-
-.black {
- font-weight: bold;
 }
 
