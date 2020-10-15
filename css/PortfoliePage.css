@@ -160,13 +160,10 @@ background-color:red;
 
 .picture{
  width: 100%;
- height: 270px;
+ height: auto;
  display: flex;
  flex-flow: row;
  align-items: flex-end;
- background-size: contain;
- background-image: url(../images/bgImg.jpg);
-background-attachment: fixed; 
 }
 
 #backgroundImg{
