@@ -133,5 +133,14 @@ background-color: black;
         max-height: 350px;    
         }
 
+    .fixed{
+     width: 500px;
+     height: 500px;
+     border: 1px solid white;   
+     background-image: url(../images/hero-bg.png);
+     background-size: cover;
+     background-attachment:fixed;
+    }
+
 }
 
