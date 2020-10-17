@@ -8,11 +8,6 @@
 /* #8D2BFA */
 /* CSS-variables for colors and typographys: */ 
 
-:root{
---main-button-font: 'Roboto Slab', serif;
---main-header-font: 'Playfair Display', serif;
---main-text-font: 'Peddana', serif;
-}
 
 *{
  box-sizing: border-box;   
@@ -24,7 +19,21 @@ padding: 0;
 
 }
 
+
+:root{
+    --main-button-font: 'Roboto Slab', serif;
+    --main-header-font: 'Playfair Display', serif;
+    --main-text-font: 'Peddana', serif;
+    }
+
 @media screen and (max-width:767px){
+
+    :root{
+        --main-button-font: 'Roboto Slab', serif;
+        --main-header-font: 'Playfair Display', serif;
+        --main-text-font: 'Peddana', serif;
+        }
+
     .menu li, a {
         color: white;
         list-style: none;
@@ -134,213 +143,108 @@ padding: 0;
         max-height: 350px;    
         }
 
-    .fixed{
-     width: auto;
-     margin-left: auto;
-     margin-right: auto;
-     height: 350px;
-     background-image: url(../images/hero-bg.png);
-     background-size: cover;
-     background-attachment:fixed;
+    .main-frame_container{
+    width: 100%;
+    height: auto;
+    background-color: #8D2BFA;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     }
 
-.content-box{
-width: 100%;
-height: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #8D2BFA;
+    .content-box{
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+#margintop{
+ margin-top: 70px;
+
 }
 
-#introduction_content{
-width: 100%;
-height: 300px;
-display: flex;
-flex-flow: column;
-align-items: center;
-justify-content: center;  
-color: white;
-}
+.main-header{
+ font-family: var(--main-header-font);
+ color: white;
+    }
 
-.text-font{
-font-family: var(--main-text-font);   
-color: white; 
-width: 90%;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-}
+    .main-text{
+        font-family: var(--main-text-font);   
+        color: white; 
+        margin-top: -3px;
+    }
 
-.Header{
-font-family: var(--main-header-font);   
-margin: 0;
-color: white;
-width: 90%;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-}
-
-#CTAPortefolio{
-    padding: 10px 30px;
+    .sub-headers{
+    font-family: var(--main-header-font);
     color: white;
-    background-color: transparent;
-    border: 2px solid crimson;
-    font-size: 0.5rem;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    margin-top: 30px;
-    transition: .3s ease background-color;
-    transition-property: background-color, color;
-    margin: 0px 5px;
-    font-family: var(--main-button-font);   
-}
+    }
 
-#font1{
-margin: 0; 
-}
-
-#CTAPortefolio:hover{
-    color: black;
-    background-color: crimson; 
-}
-
-.container{
- 
-}
-
-#aboutMe{
-    background-color: #F7AA0F;
-}
-
-#aboutMe_content, .introduction_mySkills{
-width: 100%;    
-height: auto;
+.unorderedList{
+font-family: var(--main-text-font);
+color: white;
 display: flex;
 flex-flow: column;
+align-items:flex-start;
+margin-top: 0;
+margin-left: 0;
+}
+
+.Listitems{
+margin-left: -22px;
+}
+
+.content_show{
+width: 100%;
+height: auto;
+display: flex;
+flex-flow: row wrap;
+margin: 10px 0px;
+
+}
+
+#last{
+    margin-bottom: 10px;
+}
+
+.box1{
+width: 40%;
+height: auto;
+background-color: #57B7CB;
+border-top: 1px solid #E4E6ED;
+display: flex;
+flex-flow: row;
 justify-content: center;
 align-items: center;
 }
-
-#picture-box, .skill-box{
-width: 100%;
+.box2{
+width: 60%;
 height: auto;
+border-top: 1px solid #E4E6ED;
+background-color: #FFFFFF;
 display: flex;
-flex-flow: row wrap;
-align-items: center;
-justify-content: space-around;
-}
-
-.picture-frame{
-width: 40%;
-height: auto;
-}
-
-.picture-frame img{
-width: 99.9%;
-}
-
-#factsAboutMe, .skill-description-box{
-width: 100%;
-height: 200px;
-display: flex;
-flex-flow: row wrap;
-align-items: center;
-justify-content: flex-start;
-}
-
-.spacing{
-text-align: start;
-margin-top: 10px;
-}
-.marginTop{
-margin-top: 10px;
-}
-
-#factnumber_box{
-width: 100%;
-height: auto;
-display: flex;
-flex-flow: row wrap;
-justify-content: space-around;
-align-content: space-around;
-}
-
-.factNumber_content{
-width: 40%;
-height: auto;
-text-align: center;
-height: 80px;
-}
-
-.color{
-color:crimson; <
-margin-top: 5px;
-
-}
-
-#MySkills{
-background-color: #8D2BFA; 
-
-}
-
-.frame-pictures{
-width: 15%;
-height: auto;
-margin: 0px 5px;
-
-}
-
-.frame-pictures img{
-width: 99.9%;
-
-}
-.skill-box{
+flex-flow: column;
+align-content: center;
 justify-content: center;
-margin-top: 10px;
+
 }
 
-#border-radius{
-width: 150%;
-margin-left: -20px;
-}
-
-.color_to_skill_box{
-background-color: #F7AA0F;
-}
-
-
-#emailMe{
-margin: 10px; 
-padding: 10px 30px;
+.table_heading{
+font-family: var(--main-header-font);
 color: white;
-background-color: transparent;
-border: 2px solid crimson;
-font-size: 0.5rem;
-letter-spacing: .1rem;
-text-transform: uppercase;
-margin-top: 30px;
-transition: .3s ease background-color;
-transition-property: background-color, color;
-margin: 10px 5px;
-font-family: var(--main-button-font);
 }
 
-#emailMe:hover{
-    color: black;
-    background-color: crimson;  
+.text-color{
+color: black;
+width: 80%;
+margin: auto;
+margin-top: 25px;
 }
 
-.contact{
-width: 100%;
-height: 200px;
-display: flex;
-flex-flow: row;  
-justify-content: center;
-align-items: center;
-background-color: #8D2BFA;
-}
+
+
 
 }
-
