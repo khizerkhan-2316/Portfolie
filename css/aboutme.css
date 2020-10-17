@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
 
+
+/* #8D2BFA */
 /* CSS-variables for colors and typographys: */ 
 
 :root{
@@ -32,7 +34,7 @@ padding: 0;
      
         
         .header{
-            background-color: crimson;
+            background-color:#8D2BFA;
             box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
             position: fixed;
             width: 100%;
@@ -148,7 +150,7 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color:#6328E0;
+background-color: #8D2BFA;
 }
 
 #introduction_content{
@@ -212,7 +214,7 @@ margin: 0;
     background-color: #F7AA0F;
 }
 
-#aboutMe_content{
+#aboutMe_content, .introduction_mySkills{
 width: 100%;    
 height: auto;
 display: flex;
@@ -221,7 +223,7 @@ justify-content: center;
 align-items: center;
 }
 
-#picture-box{
+#picture-box, .skill-box{
 width: 100%;
 height: auto;
 display: flex;
@@ -239,7 +241,7 @@ height: auto;
 width: 99.9%;
 }
 
-#factsAboutMe{
+#factsAboutMe, .skill-description-box{
 width: 100%;
 height: 200px;
 display: flex;
@@ -252,7 +254,7 @@ justify-content: flex-start;
 text-align: start;
 margin-top: 10px;
 }
-#marginTop{
+.marginTop{
 margin-top: 10px;
 }
 
@@ -273,10 +275,41 @@ height: 80px;
 }
 
 .color{
-color:crimson; 
+color:crimson; <
 margin-top: 5px;
 
 }
+
+#MySkills{
+background-color: #8D2BFA; 
+
+}
+
+.frame-pictures{
+width: 15%;
+height: auto;
+margin: 0px 5px;
+
+}
+
+.frame-pictures img{
+width: 99.9%;
+
+}
+.skill-box{
+justify-content: center;
+margin-top: 10px;
+}
+
+#border-radius{
+width: 150%;
+margin-left: -20px;
+}
+
+.color_to_skill_box{
+background-color: #F7AA0F;
+}
+
 
 
 
