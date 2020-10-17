@@ -24,6 +24,258 @@ padding: 0;
 
 }
 
+@media screen and (min-width:1025px){
+.header{
+display: none;
+}
+
+.fixed{
+width: 30%;
+height: 800px;
+background-image: url(../images/hero-bg.png);
+background-size: cover;
+position: fixed;
+margin-top: -20px;
+
+}
+
+.test{
+width: 100%;
+height: auto;
+display: flex;
+flex-flow: row;
+justify-content: flex-end;
+}
+
+.test1{
+width: 70%;
+height: auto;
+display: flex;
+flex-flow: column;
+}
+
+.content-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8D2BFA;
+    }
+    
+    #introduction_content{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;  
+    color: white;
+    }
+    
+    .text-font{
+    font-family: var(--main-text-font);   
+    color: white; 
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    }
+    
+    .Header{
+    font-family: var(--main-header-font);   
+    margin: 0;
+    color: white;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    #CTAPortefolio{
+        padding: 10px 30px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid crimson;
+        font-size: 0.5rem;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        margin-top: 30px;
+        transition: .3s ease background-color;
+        transition-property: background-color, color;
+        margin: 0px 5px;
+        font-family: var(--main-button-font);   
+    }
+    
+    #font1{
+    margin: 0; 
+    }
+    
+    #CTAPortefolio:hover{
+        color: black;
+        background-color: crimson; 
+    }
+    
+    .container{
+     
+    }
+    
+    #aboutMe{
+        background-color: #F7AA0F;
+    }
+    
+    #aboutMe_content, .introduction_mySkills{
+    width: 100%;    
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #picture-box, .skill-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+    .picture-frame{
+    width: 40%;
+    height: auto;
+    }
+    
+    .picture-frame img{
+    width: 99.9%;
+    }
+    
+    #factsAboutMe{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    }
+
+    .skill-description-box{
+    width: 45%;
+    }
+
+    .skill-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #F7AA0F;
+    }
+
+   
+    
+    .spacing{
+    text-align: start;
+    margin-top: 10px;
+    }
+    .marginTop{
+    margin-top: 10px;
+    }
+    
+    #factnumber_box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    }
+    
+    .factNumber_content{
+    width: 25%;
+    height: auto;
+    text-align: center;
+    height: 80px;
+    }
+    
+    .color{
+    color:crimson; <
+    margin-top: 5px;
+    
+    }
+    
+    #MySkills{
+    background-color: #8D2BFA; 
+    
+    }
+    
+    .frame-pictures{
+    width: 15%;
+    height: auto;
+    margin: 0px 5px;
+    
+    }
+    
+    .frame-pictures img{
+    width: 99.9%;
+    
+    }
+    .skill-box{
+    justify-content: center;
+    margin-top: 10px;
+    }
+    
+    #border-radius{
+    width: 150%;
+    margin-left: -20px;
+    }
+    
+    .color_to_skill_box{
+    background-color: #F7AA0F;
+    }
+    
+    
+    #emailMe{
+    margin: 10px; 
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 0.5rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    transition-property: background-color, color;
+    margin: 10px 5px;
+    font-family: var(--main-button-font);
+    text-decoration: none;
+    }
+    
+    #emailMe:hover{
+        color: black;
+        background-color: crimson;  
+    }
+    
+    .contact{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-flow: row;  
+    justify-content: center;
+    align-items: center;
+    background-color: #8D2BFA;
+    }
+    
+    
+    
+    
+
+
+}
+
 @media screen and (max-width:1024px){
     .menu li, a {
         color: white;
@@ -32,7 +284,6 @@ padding: 0;
         font-family: var(--main-headingfont);
         }
      
-        
         .header{
             background-color:#8D2BFA;
             box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);

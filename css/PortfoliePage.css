@@ -25,14 +25,13 @@ background: #6328E0;
 
 
 
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   
     
 }
 
 
-@media screen and (max-width:1025px){
+@media screen and (max-width:1024px){
 
     
         *{
@@ -155,8 +154,7 @@ background: #6328E0;
         .header .menu-button:checked ~ .menu{
         max-height: 350px;    
         }
-
-
+    
 .picture{
  width: 100%;
  height: auto;
