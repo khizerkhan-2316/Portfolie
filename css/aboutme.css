@@ -24,7 +24,7 @@ padding: 0;
 
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:1024px){
     .menu li, a {
         color: white;
         list-style: none;

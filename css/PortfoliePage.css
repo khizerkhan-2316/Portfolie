@@ -32,7 +32,7 @@ background: #6328E0;
 }
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:1025px){
 
     
         *{
@@ -246,7 +246,7 @@ align-items: center;
     .CTAProjects{
     font-family: var(--main-button-font); 
     padding: 10px 30px;
-        color: white;
+        color: black;
         background-color: transparent;
         border: 2px solid crimson;
         font-size: 0.5rem;
@@ -254,7 +254,7 @@ align-items: center;
         margin-top: 30px;
         transition: .3s ease background-color;
         transition-property: background-color, color;
-        margin: 0px 5px;
+        margin: 10px 5px;
         font-family: var(--main-button-font);
     }
     
@@ -284,7 +284,15 @@ align-items: center;
     }
     
 
-
+.button-box{
+width: 100%;
+height: auto;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
 
 
 }

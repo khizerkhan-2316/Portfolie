@@ -26,7 +26,7 @@ padding: 0;
     --main-text-font: 'Peddana', serif;
     }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:1024px){
 
     :root{
         --main-button-font: 'Roboto Slab', serif;
