@@ -96,7 +96,6 @@ padding: 0;
     height: auto;
     display: flex;
     flex-flow: row wrap;
-    margin: 10px 0px;
     
     }
     
@@ -400,7 +399,6 @@ width: 100%;
 height: auto;
 display: flex;
 flex-flow: row wrap;
-margin: 10px 0px;
 
 }
 
