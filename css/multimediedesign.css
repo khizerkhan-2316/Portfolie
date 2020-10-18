@@ -468,6 +468,14 @@ margin-top: 25px;
             background-color: crimson;   
         }
 
+        .button-box{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+              }
+
 
 
 }
