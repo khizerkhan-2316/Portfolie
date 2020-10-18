@@ -175,6 +175,13 @@ color: black;
 }
 
 
+.content_headers{
+font-family: var(--main-header-font);
+color: white;
+
+}
+
+
 }
     
 
@@ -399,6 +406,12 @@ width: 80%;
 margin: auto;
 margin-top: 25px;
 }
+
+.content_headers{
+    font-family: var(--main-header-font);
+    color: white;
+    
+    }
 
 
 

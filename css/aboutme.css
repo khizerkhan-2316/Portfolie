@@ -24,10 +24,28 @@ padding: 0;
 
 }
 
+
 @media screen and (min-width:1025px){
+
+
+
+/*
+.fullscreen-box{
+width: 100%;
+height: auto;
+}
+
+#fullscreenImage{
+width: 69vw;
+}
+
+*/
+
 .header{
 display: none;
 }
+
+
 
 .navigation{
     width: 70%;
@@ -40,6 +58,7 @@ display: none;
     align-items: center;
     justify-content: space-between;
     margin-left: 30%;
+    display: none;
     
     }
     
@@ -47,10 +66,11 @@ display: none;
     margin-left: 60px;
     }
 
-    #content-1{
+    /*#content-1{
     margin-top: 60px;
     }
-    
+    */
+
     .nav-list{
     display: flex;
     width: 450px;
@@ -74,9 +94,9 @@ display: none;
 .fixed{
 width: 30%;
 height: 100vh;
-background-image: url(../images/hero-bg.png);
+background-image: url(../images/khizer-fixed.jpg);
 background-size: cover;
-position: fixed;
+position: fixed; 
 
 }
 
