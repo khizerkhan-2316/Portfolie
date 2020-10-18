@@ -43,7 +43,7 @@ padding: 0;
         }
     
         .content-box{
-        width: 90%;
+        width: 50%;
         height: auto;
         margin: 10px;
         display: flex;
@@ -51,8 +51,13 @@ padding: 0;
         align-items: flex-start;
         justify-content: flex-start;
         }
+
+        .content-box img{
+        width: 99.99%;
+        }
+        
     #margintop{
-     margin-top: 70px;
+     margin-top: 80px;
     
     }
     
@@ -133,9 +138,7 @@ padding: 0;
     margin-top: 25px;
     }
     
-.content-box{
-width: 50%;
-}
+
 
 .navigation{
 width: 100%;
@@ -181,6 +184,34 @@ color: white;
 
 }
 
+.CTAProjects{
+    font-family: var(--main-button-font); 
+    padding: 10px 30px;
+        color: black;
+        background-color: transparent;
+        border: 2px solid crimson;
+        font-size: 0.5rem;
+        letter-spacing: .1rem;
+        margin-top: 30px;
+        transition: .3s ease background-color;
+        transition-property: background-color, color;
+        margin: 10px 5px;
+        font-family: var(--main-button-font);
+        text-align: center;
+    }
+    
+    .CTAProjects:hover{
+        color: black;
+        background-color: crimson;   
+    }
+
+  .button-box{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+  }
 
 }
     
@@ -330,6 +361,10 @@ color: white;
 
 }
 
+.content-box img{
+    width: 99.99%;
+    }
+
 .main-header{
  font-family: var(--main-header-font);
  color: white;
@@ -413,6 +448,25 @@ margin-top: 25px;
     
     }
 
+    .CTAProjects{
+        font-family: var(--main-button-font); 
+        padding: 10px 30px;
+            color: black;
+            background-color: transparent;
+            border: 2px solid crimson;
+            font-size: 0.5rem;
+            letter-spacing: .1rem;
+            margin-top: 30px;
+            transition: .3s ease background-color;
+            transition-property: background-color, color;
+            margin: 10px 5px;
+            font-family: var(--main-button-font);
+        }
+        
+        .CTAProjects:hover{
+            color: black;
+            background-color: crimson;   
+        }
 
 
 
