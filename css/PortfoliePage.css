@@ -19,20 +19,203 @@
 body{
 margin: 0;
 padding: 0;   
-background: #6328E0;
+ background-color: #8D2BFA;
 
 }
 
 
 
 @media only screen and (min-width: 1025px) {
-  
+.header{
+display: none;
+}
+
+.navigation{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid white;
+    background-color: #8D2BFA;
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+    
+    .navigation img{
+    margin-left: 60px;
+    }
+    
+    .nav-list{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 100px;
+    }
+    
+    .nav-list a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--main-header-font);
+    }
+    
+    .nav-list a:hover{
+    color: black;
+    }
+    
+
+.picture{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+   }
+   
+   #backgroundImg{
+   width: 99.99%;
+   height: auto;
+   }
+
+   #buttons-box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #buttons-box button{
+        padding: 10px 30px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid crimson;
+        font-size: 0.5rem;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        margin-top: 30px;
+        transition: .3s ease background-color;
+        transition-property: background-color, color;
+        margin: 0px 5px;
+        font-family: var(--main-button-font);
+    
+    }
+    
+    #buttons-box button:hover{
+        color: black;
+        background-color: crimson; 
+    }
+    
+    .heading{
+     font-family: var(--main-header-font);   
+     text-align: center;
+     font-size: 1.3rem;
+     color: white;
+     display: none;
+    
+    }
+
+    .portfoli-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        background-color: #6328E0;
+        }
+        
+        .portfolio-box{
+        width: 33%;
+        height: auto;
+        border: 2px solid white;
+        background: #FFFFFF;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.455), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        margin: 20px 10px;
+        display: flex;
+        flex-flow: column;
+        font-family: var(--main-text-font);
+        }
+        
+        .portfolio-box:hover{
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.87), 0 10px 10px rgba(0, 0, 0, 0.898);  
+        
+        }
+        
+        
+        .portfolio-box img{
+        width: 99.99%;
+        height: 200px; 
+        }
+        
+        .CTAProjects{
+        font-family: var(--main-button-font); 
+        padding: 10px 30px;
+            color: black;
+            background-color: transparent;
+            border: 2px solid crimson;
+            font-size: 0.5rem;
+            letter-spacing: .1rem;
+            margin-top: 30px;
+            transition: .3s ease background-color;
+            transition-property: background-color, color;
+            margin: 10px 5px;
+            font-family: var(--main-button-font);
+        }
+        
+        .CTAProjects:hover{
+            color: black;
+            background-color: crimson;   
+        }
+        
+        .headingProjects{
+         font-family: var(--main-header-font);  
+         margin-left: 4%;
+        }
+        
+        .projectsText{
+         font-family: var(--main-text-font);  
+         margin: 0 4%;
+        }
+        
+        .black {
+         font-weight: bold;
+        }
+        
+        
+        .portfolio-box a{
+        width: 100%; 
+        border: 1px solid white;
+        }
+        
+    
+    .button-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    
     
 }
 
 
 @media screen and (max-width:1024px){
 
+    .navigation{
+        display: none;
+        }
     
         *{
          box-sizing: border-box;   
@@ -55,7 +238,7 @@ background: #6328E0;
      
         
         .header{
-            background-color: crimson;
+            background-color: #8D2BFA;
             box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
             position: fixed;
             width: 100%;
@@ -175,6 +358,7 @@ display: flex;
 flex-flow: row wrap;
 justify-content: center;
 align-items: center;
+background-color: #8D2BFA;
 }
 
 #buttons-box button{
@@ -204,6 +388,7 @@ align-items: center;
  font-size: 1.3rem;
  color: white;
  display: none;
+ background-color: #8D2BFA;
 
 }
 
@@ -215,7 +400,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     display: none;
-    background-color: #6328E0;
+    background-color: #8D2BFA;
     }
     
     .portfolio-box{

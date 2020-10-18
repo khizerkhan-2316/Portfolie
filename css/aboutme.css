@@ -29,13 +29,54 @@ padding: 0;
 display: none;
 }
 
+.navigation{
+    width: 70%;
+    height: 80px;
+    border-bottom: 1px solid white;
+    background-color: #8D2BFA;
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30%;
+    
+    }
+    
+    .navigation img{
+    margin-left: 60px;
+    }
+
+    #content-1{
+    margin-top: 60px;
+    }
+    
+    .nav-list{
+    display: flex;
+    width: 450px;
+    justify-content: space-around;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 100px;
+    }
+    
+    .nav-list a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--main-header-font);
+    }
+    
+    .nav-list a:hover{
+    color: black;
+    }
+
 .fixed{
 width: 30%;
-height: 800px;
+height: 100vh;
 background-image: url(../images/hero-bg.png);
 background-size: cover;
 position: fixed;
-margin-top: -20px;
 
 }
 
@@ -277,6 +318,12 @@ flex-flow: column;
 }
 
 @media screen and (max-width:1024px){
+
+    
+  .navigation{
+    display: none;
+    }
+    
     .menu li, a {
         color: white;
         list-style: none;
