@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 
 
 /* #8D2BFA */
@@ -23,7 +24,7 @@ padding: 0;
 :root{
     --main-button-font: 'Roboto Slab', serif;
     --main-header-font: 'Playfair Display', serif;
-    --main-text-font: 'Peddana', serif;
+    --main-text-font: 'Kanit', sans-serif;
     }
 
     @media screen and (min-width:1025px){
@@ -70,6 +71,8 @@ padding: 0;
             font-family: var(--main-text-font);   
             color: white; 
             margin-top: -3px;
+            line-height: 2;
+            font-size: 15px;
         }
     
         .sub-headers{
@@ -217,12 +220,7 @@ margin-top: 10px;
 
 @media screen and (max-width:1024px){
 
-    :root{
-        --main-button-font: 'Roboto Slab', serif;
-        --main-header-font: 'Playfair Display', serif;
-        --main-text-font: 'Peddana', serif;
-        }
-
+  
         .navigation{
         display: none;
         }
@@ -373,6 +371,7 @@ margin-top: 10px;
         font-family: var(--main-text-font);   
         color: white; 
         margin-top: -3px;
+        font-size: 15px;
     }
 
     .sub-headers{

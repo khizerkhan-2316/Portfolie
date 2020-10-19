@@ -3,13 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 
 /* CSS-variables for colors and typographys: */ 
 
 :root{
 --main-button-font: 'Roboto Slab', serif;
 --main-header-font: 'Playfair Display', serif;
---main-text-font: 'Peddana', serif;
+--main-text-font: 'Kanit', sans-serif;
 }
 
 *{
@@ -182,7 +183,9 @@ display: none;
         
         .projectsText{
          font-family: var(--main-text-font);  
-         margin: 0 4%;
+         margin: 2% 4%;
+         font-size: 15px;
+         line-height: 1.5;
         }
         
         .black {
@@ -451,10 +454,14 @@ background-color: #8D2BFA;
      margin-left: 4%;
     }
     
-    .projectsText{
-     font-family: var(--main-text-font);  
-     margin: 0 4%;
-    }
+        .projectsText{
+            font-family: var(--main-text-font);  
+            margin: 2% 4%;
+            font-size: auto;
+            line-height: 1.5;
+           }
+           
+    
     
     .black {
      font-weight: bold;
