@@ -4,13 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
-/* #8D2BFA */
+/* #FF3366 */
 /* CSS-variables for colors and typographys: */ 
 
 :root{
 --main-button-font: 'Roboto Slab', serif;
 --main-header-font: 'Playfair Display', serif;
 --main-text-font: 'Kanit', sans-serif;
+--main-hidden-show-text: "none";
 }
 
 *{
@@ -50,14 +51,13 @@ display: none;
     width: 70%;
     height: 80px;
     border-bottom: 1px solid white;
-    background-color: #8D2BFA;
+    background-color: #FF3366;
     position: fixed;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     margin-left: 30%;
-    display: none;
     
     }
     
@@ -65,10 +65,10 @@ display: none;
     margin-left: 60px;
     }
 
-    /*#content-1{
+    #content-1{
     margin-top: 60px;
     }
-    */
+    
 
     .nav-list{
     display: flex;
@@ -96,6 +96,8 @@ height: 100vh;
 background-image: url(../images/khizer-fixed.jpg);
 background-size: cover;
 position: fixed; 
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);    
 
 }
 
@@ -120,7 +122,16 @@ flex-flow: column;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8D2BFA;
+    }
+
+    .content-box:nth-child(odd) {
+    background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("/images/background.jpg");
+    width: 100%;
+    }
+
+    .content-box:nth-child(even) {
+    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("/images/background-flipped.jpg");
+    width: 100%;
     }
     
     #introduction_content{
@@ -157,7 +168,7 @@ flex-flow: column;
         padding: 10px 30px;
         color: white;
         background-color: transparent;
-        border: 2px solid crimson;
+        border: 2px solid white;
         font-size: 0.5rem;
         letter-spacing: .1rem;
         text-transform: uppercase;
@@ -174,7 +185,8 @@ flex-flow: column;
     
     #CTAPortefolio:hover{
         color: black;
-        background-color: crimson; 
+        background-color: white;
+        border-color: crimson;
     }
     
     .container{
@@ -182,7 +194,7 @@ flex-flow: column;
     }
     
     #aboutMe{
-        background-color: #F7AA0F;
+        background-color: #232F3D;
     }
     
     #aboutMe_content, .introduction_mySkills{
@@ -211,6 +223,10 @@ flex-flow: column;
     .picture-frame img{
     width: 99.9%;
     }
+
+    .hidden{
+        display: none;
+        }
     
     #factsAboutMe{
     width: 100%;
@@ -231,7 +247,7 @@ flex-flow: column;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: #F7AA0F;
+    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("/images/background-flipped.jpg");
     }
 
    
@@ -261,13 +277,13 @@ flex-flow: column;
     }
     
     .color{
-    color:crimson; <
+    color:crimson; 
     margin-top: 5px;
     
     }
     
     #MySkills{
-    background-color: #8D2BFA; 
+    background-color: #FF3366; 
     
     }
     
@@ -280,7 +296,7 @@ flex-flow: column;
     
     .frame-pictures img{
     width: 99.9%;
-    
+   
     }
     .skill-box{
     justify-content: center;
@@ -292,9 +308,7 @@ flex-flow: column;
     margin-left: -20px;
     }
     
-    .color_to_skill_box{
-    background-color: #F7AA0F;
-    }
+
     
     
     #emailMe{
@@ -326,7 +340,8 @@ flex-flow: column;
     flex-flow: row;  
     justify-content: center;
     align-items: center;
-    background-color: #8D2BFA;
+    background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("/images/background.jpg");
+
     }
     
     
@@ -357,7 +372,7 @@ margin-top: 10px;
         }
      
         .header{
-            background-color:#8D2BFA;
+            background-color:#FF3366;
             box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .3);
             position: fixed;
             width: 100%;
@@ -465,6 +480,8 @@ margin-top: 10px;
      background-image: url(../images/khizer-fixed.jpg);
      background-size: cover;
      background-attachment: fixed;
+     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);    
     }
 
 .content-box{
@@ -473,7 +490,7 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #8D2BFA;
+background-color: #FF3366;
 }
 
 #introduction_content{
@@ -534,7 +551,7 @@ margin: 0;
 }
 
 #aboutMe{
-    background-color: #F7AA0F;
+    background-color: #232F3D;
 }
 
 #aboutMe_content, .introduction_mySkills{
@@ -604,7 +621,7 @@ margin-top: 5px;
 }
 
 #MySkills{
-background-color: #8D2BFA; 
+background-color: #FF3366; 
 
 }
 
@@ -630,7 +647,8 @@ margin-left: -20px;
 }
 
 .color_to_skill_box{
-background-color: #F7AA0F;
+    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("/images/background-flipped.jpg");
+   
 }
 
 
@@ -662,7 +680,7 @@ display: flex;
 flex-flow: row;  
 justify-content: center;
 align-items: center;
-background-color: #8D2BFA;
+background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("/images/background.jpg");
 }
 
 .list{
@@ -674,6 +692,18 @@ background-color: #8D2BFA;
     }
 
 
- 
+ .hidden{
+display: none;
+ }
+
+  .content-box:nth-child(odd) {
+    background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("/images/background.jpg");
+    width: 100%;
+    }
+
+    .content-box:nth-child(even) {
+    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("/images/background-flipped.jpg");
+    width: 100%;
+    }
 }
 
