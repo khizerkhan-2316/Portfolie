@@ -98,7 +98,7 @@ display: none;
         padding: 10px 30px;
         color: white;
         background-color: transparent;
-        border: 2px solid crimson;
+        border: 2px solid white;
         font-size: 0.5rem;
         letter-spacing: .1rem;
         text-transform: uppercase;
@@ -111,8 +111,7 @@ display: none;
     }
     
     #buttons-box button:hover{
-        color: black;
-        background-color: crimson; 
+        border-color: crimson;
     }
     
     .heading{
@@ -166,7 +165,7 @@ display: none;
         padding: 10px 30px;
             color: black;
             background-color: transparent;
-            border: 2px solid crimson;
+            border: 2px solid #FF3366;
             font-size: 0.5rem;
             letter-spacing: .1rem;
             margin-top: 30px;
@@ -374,7 +373,7 @@ align-items: center;
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid crimson;
+    border: 2px solid white;
     font-size: 0.5rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
@@ -387,8 +386,7 @@ align-items: center;
 }
 
 #buttons-box button:hover{
-    color: black;
-    background-color: crimson; 
+   border-color: crimson;
 }
 
 .heading{

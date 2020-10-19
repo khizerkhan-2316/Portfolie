@@ -177,6 +177,7 @@ flex-flow: column;
         transition-property: background-color, color;
         margin: 0px 5px;
         font-family: var(--main-button-font);   
+        text-decoration: none;
     }
     
     #font1{
@@ -184,8 +185,7 @@ flex-flow: column;
     }
     
     #CTAPortefolio:hover{
-        color: black;
-        background-color: white;
+    
         border-color: crimson;
     }
     
@@ -526,7 +526,7 @@ margin-right: auto;
     padding: 10px 30px;
     color: white;
     background-color: transparent;
-    border: 2px solid crimson;
+    border: 2px solid white;
     font-size: 0.5rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
@@ -542,8 +542,8 @@ margin: 0;
 }
 
 #CTAPortefolio:hover{
-    color: black;
-    background-color: crimson; 
+    border-color: crimson;
+      
 }
 
 .container{

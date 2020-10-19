@@ -190,9 +190,9 @@ color: white;
 .CTAProjects{
     font-family: var(--main-button-font); 
     padding: 10px 30px;
-        color: black;
+        color: white;
         background-color: transparent;
-        border: 2px solid crimson;
+        border: 2px solid white;
         font-size: 0.5rem;
         letter-spacing: .1rem;
         margin-top: 30px;
@@ -204,8 +204,7 @@ color: white;
     }
     
     .CTAProjects:hover{
-        color: black;
-        background-color: crimson;   
+        border-color: crimson;   
     }
 
   .button-box{
@@ -450,9 +449,9 @@ margin-top: 25px;
     .CTAProjects{
         font-family: var(--main-button-font); 
         padding: 10px 30px;
-            color: black;
+            color: white;
             background-color: transparent;
-            border: 2px solid crimson;
+            border: 2px solid white;
             font-size: 0.5rem;
             letter-spacing: .1rem;
             margin-top: 30px;
@@ -463,8 +462,7 @@ margin-top: 25px;
         }
         
         .CTAProjects:hover{
-            color: black;
-            background-color: crimson;   
+          border-color: crimson;
         }
 
         .button-box{
