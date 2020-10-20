@@ -58,6 +58,7 @@ display: none;
     align-items: center;
     justify-content: space-between;
     margin-left: 30%;
+    background-color: #;
     
     }
     
@@ -194,7 +195,6 @@ flex-flow: column;
     }
     
     #aboutMe{
-        background-color: #232F3D;
     }
     
     #aboutMe_content, .introduction_mySkills{
@@ -283,7 +283,6 @@ flex-flow: column;
     }
     
     #MySkills{
-    background-color: #FF3366; 
     
     }
     
@@ -488,7 +487,6 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #FF3366;
 }
 
 #introduction_content{
@@ -549,7 +547,6 @@ margin: 0;
 }
 
 #aboutMe{
-    background-color: #232F3D;
 }
 
 #aboutMe_content, .introduction_mySkills{
@@ -619,7 +616,6 @@ margin-top: 5px;
 }
 
 #MySkills{
-background-color: #FF3366; 
 
 }
 
