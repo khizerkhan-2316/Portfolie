@@ -122,6 +122,8 @@ flex-flow: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
+padding-bottom: 10px;
     }
 
     .content-box:nth-child(odd) {
@@ -152,11 +154,13 @@ flex-flow: column;
     margin-right: auto;
     text-align: center;
     font-size: 15px;
+    line-height: 2;
+    
     }
     
     .Header{
     font-family: var(--main-header-font);   
-    margin: 0;
+    margin: 10px 0px;
     color: white;
     width: 90%;
     text-align: center;
@@ -203,6 +207,8 @@ flex-flow: column;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     }
     
     #picture-box, .skill-box{
@@ -229,11 +235,13 @@ flex-flow: column;
     
     #factsAboutMe{
     width: 100%;
-    height: 200px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
+  padding-top: 10px;
+padding-bottom: 10px;
+  
     }
 
     .skill-description-box{
@@ -247,13 +255,14 @@ flex-flow: column;
     flex-flow: row wrap;
     justify-content: space-around;
     background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("../images/background-flipped.jpg");
+    padding-top: 10px;
+padding-bottom: 10px;
     }
 
    
     
     .spacing{
     text-align: start;
-    margin-top: 10px;
     }
     .marginTop{
     margin-top: 10px;
@@ -266,6 +275,8 @@ flex-flow: column;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: space-around;
+    padding-top: 10px;
+padding-bottom: 10px;
     }
     
     .factNumber_content{
@@ -289,6 +300,8 @@ flex-flow: column;
     width: 15%;
     height: auto;
     margin: 0px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
     }
     
@@ -346,7 +359,7 @@ color: white;
 font-family: var(--main-text-font);
 line-height: 2;
 font-size: 15px;
-margin-top: 10px;
+margin-top: 15px;
 }
 
 
@@ -496,6 +509,7 @@ flex-flow: column;
 align-items: center;
 justify-content: center;  
 color: white;
+
 }
 
 .text-font{
@@ -505,11 +519,13 @@ width: 90%;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
+line-height: 2;
+
 }
 
 .Header{
 font-family: var(--main-header-font);   
-margin: 0;
+margin: 10px;
 color: white;
 width: 90%;
 text-align: center;
@@ -555,6 +571,8 @@ display: flex;
 flex-flow: column;
 justify-content: center;
 align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 
 #picture-box, .skill-box{
@@ -582,6 +600,8 @@ display: flex;
 flex-flow: row wrap;
 align-items: center;
 justify-content: flex-start;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 
 .spacing{
@@ -622,6 +642,8 @@ margin-top: 5px;
 width: 15%;
 height: auto;
 margin: 0px 5px;
+padding-top: 10px;
+padding-bottom: 10px;
 
 }
 
