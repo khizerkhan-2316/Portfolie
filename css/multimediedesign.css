@@ -162,6 +162,8 @@ background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 
 
 .navigation img{
 margin-left: 60px;
+width: 35px;
+
 }
 
 .nav-list{
@@ -285,7 +287,8 @@ margin-top: 10px;
       margin-top: 20px;
       margin-bottom: 10px;
       margin-left: 18px;
-      border: 1px solid white;
+      width: 35px;
+
         }
         
         .header .menu-icon{
