@@ -28,11 +28,14 @@ document.getElementById(element).style.display = "flex";
 
 
 function scrollWindow(){
-window.scrollTo(0, window.innerHeight /1.1);
+window.scrollTo(0, window.innerHeight /1);
 }
 
+/*
 function scrollWindowMobile(){
-    window.scrollTo(0, window.innerHeight /1.01);
+    window.scrollTo(0, window.innerHeight /1);
 
 }
+
+*/
 // Javascript slut for "portfolie.html"!
