@@ -28,7 +28,10 @@ padding: 0;
     }
 
     @media screen and (min-width:1025px){
-     
+     .hidden{
+    display: none;
+     }
+        
     .header {
     display: none;
     }    
@@ -475,6 +478,8 @@ margin-top: 25px;
             margin-top: 10px;
               }
 
-
+              .hidden{
+                display: none;
+                 }
 
 }
