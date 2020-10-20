@@ -126,12 +126,12 @@ flex-flow: column;
     }
 
     .content-box:nth-child(odd) {
-        background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("../images/background.JPG");
+        background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("../images/background.jpg");
     width: 100%;
     }
 
     .content-box:nth-child(even) {
-    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("/images/background-flipped.JPG");
+    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("../images/background-flipped.jpg");
     width: 100%;
     }
     
@@ -247,7 +247,7 @@ flex-flow: column;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("/images/background-flipped.JPG");
+    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("../images/background-flipped.jpg");
     }
 
    
@@ -337,7 +337,7 @@ flex-flow: column;
     flex-flow: row;  
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("../images/background.JPG");
+    background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("../images/background.jpg");
     }
     
     
@@ -637,7 +637,7 @@ margin-top: 10px;
 
 
 .color_to_skill_box{
-    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("/images/background-flipped.JPG");
+    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("../images/background-flipped.jpg");
    
 }
 
@@ -670,7 +670,7 @@ display: flex;
 flex-flow: row;  
 justify-content: center;
 align-items: center;
-background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("../images/background.JPG");
+background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("../images/background.jpg");
 }
 
 .list{
@@ -691,12 +691,12 @@ display: none;
  }
 
   .content-box:nth-child(odd) {
-    background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("../images/background.JPG");
+    background-image: linear-gradient(90deg, rgba(255, 51, 102, 0.8), rgba(255, 51, 102, 1)), url("../images/background.jpg");
     width: 100%;
     }
 
     .content-box:nth-child(even) {
-    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("/images/background-flipped.JPG");
+    background-image: linear-gradient(90deg,rgba(35, 47, 61, 0.8), rgba(35, 47, 61, 1)), url("../images/background-flipped.jpg");
     width: 100%;
     }
 }
