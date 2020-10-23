@@ -501,7 +501,7 @@ width: 69vw;
     margin-right: auto;
     height: 60vh;
     background-image: url(../images/khizer-fixed.jpg);
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
