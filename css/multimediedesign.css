@@ -123,8 +123,8 @@ padding: 0;
     .box2{
     width: 60%;
     height: auto;
-    border-top: 1px solid #E4E6ED;
-    background-color: #FFFFFF;
+    border-top: 1px solid white;
+    background-color: #E4E6ED;
     display: flex;
     flex-flow: column;
     align-content: center;
@@ -426,8 +426,8 @@ align-items: center;
 .box2{
 width: 60%;
 height: auto;
-border-top: 1px solid #E4E6ED;
-background-color: #FFFFFF;
+border-top: 1px solid white;
+background-color:#E4E6ED;
 display: flex;
 flex-flow: column;
 align-content: center;
@@ -445,6 +445,7 @@ color: black;
 width: 80%;
 margin: auto;
 margin-top: 25px;
+font-family: var(--main-text-font);
 }
 
 .content_headers{
