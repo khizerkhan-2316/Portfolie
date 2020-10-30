@@ -8,8 +8,8 @@ document.getElementById("mmd").ontouchstart = function(){showElement("headingMmd
 document.getElementById("dm").ontouchstart= function(){showElement("headingDm"), hideElement("headingMmd"), hideElement("mmdProjects"), scrollWindowMobile()}
 
 //for pc-laptos, computers: 
-document.getElementById("mmd").onclick = function(){showElement("headingMmd"), hideElement("headingDm"), showboxElements("mmdProjects"), scrollWindow()}
-document.getElementById("dm").onclick = function(){showElement("headingDm"), hideElement("headingMmd"), hideElement("mmdProjects"), scrollWindow()}
+document.getElementById("mmd").onclick = function(){showElement("headingMmd"), hideElement("headingDm"), hideElement("datamatikerProjects"), showboxElements("mmdProjects"), scrollWindow()}
+document.getElementById("dm").onclick = function(){showElement("headingDm"), hideElement("headingMmd"), hideElement("mmdProjects"), showboxElements('datamatikerProjects'), scrollWindow()};
 
 //functions:
 function showElement(element){
