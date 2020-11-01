@@ -40,6 +40,9 @@ width: 69vw;
 
 */
 
+
+
+
   .highlight {
     color: #f94c78;
   }
@@ -316,6 +319,7 @@ width: 69vw;
     padding-bottom: 10px;
     display: flex;
     justify-content: center;
+    border: 1px solid black;
   }
 
   .frame-pictures img {
