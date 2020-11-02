@@ -1,1 +1,3 @@
-#Welcome to my portfolio (https://github.com/khizerkhan-2316/Portfolie/blob/master/images/coding.svg "My logo")
+# Welcome to my portfolio 
+![Logo] (images/coding.svg)
+<img src= "images/coding.svg" width= "100px">
