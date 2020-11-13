@@ -1,13 +1,12 @@
-/* Google-fonts: */ 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+/* Google-fonts: */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
+/* CSS-variables for colors and typographys: */
 
-/* CSS-variables for colors and typographys: */ 
-
-:root{
-    --main-header-font: 'Playfair Display', serif;
-    }
+:root {
+  --main-header-font: "Playfair Display", serif;
+}
 
 /* Media qurires:
 
@@ -17,60 +16,56 @@
 
     @media screen and (max-width:500px){} */
 
-*{
- box-sizing: border-box;   
-
+* {
+  box-sizing: border-box;
 }
 
-body{
-margin: 0;
-padding: 0;    
+body {
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (min-width: 1024px) {
-a{
+  a {
     text-decoration: none;
-    }
-    
-    
-    
-    
-    .container{
+  }
+
+  .container {
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    }
-    
-    #hero{
+  }
+
+  #hero {
     background-image: url(../images/hero-bg.png);
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
-    }
-    
-    #hero::after{
+  }
+
+  #hero::after {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     background-color: black;
-    content: '';
+    content: "";
     opacity: 0.7;
     z-index: -1;
-    }
-    
-    #hero .hero{
+  }
+
+  #hero .hero {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
     justify-content: flex-start;
-    }
-    
-    #hero h1{
+  }
+
+  #hero h1 {
     display: block;
     width: fit-content;
     font-size: 4rem;
@@ -79,512 +74,483 @@ a{
     animation: text_reveal 5s ease forwards;
     animation-delay: 1s;
     font-family: var(--main-header-font);
-    }
-    
-    #hero h1:nth-child(1){
-    animation-delay: 1s;  
-    }
-    
-    #hero h1:nth-child(2){
-    animation-delay: 2s;    
-    }
-    
-    #hero h1:nth-child(3){
-    animation: text_reveal_name .5s ease forwards;
-    animation-delay: 3s; 
-    
-    }
-    
-    #hero h1 span{
+  }
+
+  #hero h1:nth-child(1) {
+    animation-delay: 1s;
+  }
+
+  #hero h1:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  #hero h1:nth-child(3) {
+    animation: text_reveal_name 0.5s ease forwards;
+    animation-delay: 3s;
+  }
+
+  #hero h1 span {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 0;
-    background-color: #FA4F7A;
+    background-color: #fa4f7a;
     animation: text_reveal_box 1s ease;
-    animation-delay: .5s;
-    }
-    
-    #hero h1:nth-child(1) span{
-    animation-delay: .5s;
-    }
-    
-    #hero h1:nth-child(2) span{
+    animation-delay: 0.5s;
+  }
+
+  #hero h1:nth-child(1) span {
+    animation-delay: 0.5s;
+  }
+
+  #hero h1:nth-child(2) span {
     animation-delay: 1.5s;
-    }
-    
-    #hero h1:nth-child(3) span{
+  }
+
+  #hero h1:nth-child(3) span {
     animation-delay: 2.5s;
-    }
-    
-    #hero .cta{
+  }
+
+  #hero .cta {
     display: inline-block;
     padding: 10px 30px;
     color: white;
     background-color: transparent;
     border: 2px solid white;
     font-size: 2rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
     margin-top: 30px;
-    transition: .7s ease background-color;
+    transition: 0.7s ease background-color;
     transition-property: background-color, color;
-    }
-    
-    #hero .cta:hover{
+  }
+
+  #hero .cta:hover {
     color: white;
-    background-color: #FA4F7A;
-    border-color: #FA4F7A;
+    background-color: #fa4f7a;
+    border-color: #fa4f7a;
+  }
+
+  @keyframes text_reveal_box {
+    50% {
+      width: 100%;
+      left: 0;
     }
-    
-    
-    @keyframes text_reveal_box{
-        50%{
-        width: 100%;
-        left: 0;
-        }    
-        
-        100%{
-        width: 0;
-        left: 100%;
-        }
+
+    100% {
+      width: 0;
+      left: 100%;
     }
-    
-    @keyframes text_reveal{
-        100%{
-        color: white;
-        }    
+  }
+
+  @keyframes text_reveal {
+    100% {
+      color: white;
     }
-    
-    @keyframes text_reveal_name{
-        100%{
-        color: #FA4F7A;
-        font-weight: 500;
-        }    
+  }
+
+  @keyframes text_reveal_name {
+    100% {
+      color: #fa4f7a;
+      font-weight: 500;
     }
-    
+  }
 }
 
-@media only screen and (min-width:768px) and (max-width:1023px) { 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  a {
+    text-decoration: none;
+  }
 
-    a{
-        text-decoration: none;
-        }
-        
-        
-        
-        
-        .container{
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
-        
-        #hero{
-        background-image: url(../images/hero-bg.png);
-        background-size: cover;
-        background-position: top center;
-        position: relative;
-        z-index: 1;
-        }
-        
-        #hero::after{
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-color: black;
-        content: '';
-        opacity: 0.7;
-        z-index: -1;
-        }
-        
-        #hero .hero{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 50px;
-        justify-content: flex-start;
-        }
-        
-        #hero h1{
-        display: block;
-        width: fit-content;
-        font-size: 2.5rem;
-        position: relative;
-        color: transparent;
-        animation: text_reveal 5s ease forwards;
-        animation-delay: 1s;
-        }
-        
-        #hero h1:nth-child(1){
-        animation-delay: 1s;  
-        }
-        
-        #hero h1:nth-child(2){
-        animation-delay: 2s;    
-        }
-        
-        #hero h1:nth-child(3){
-        animation: text_reveal_name .5s ease forwards;
-        animation-delay: 3s; 
-        
-        }
-        
-        #hero h1 span{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 0;
-        background-color:  #FA4F7A;;
-        animation: text_reveal_box 1s ease;
-        animation-delay: .5s;
-        }
-        
-        #hero h1:nth-child(1) span{
-        animation-delay: .5s;
-        }
-        
-        #hero h1:nth-child(2) span{
-        animation-delay: 1.5s;
-        }
-        
-        #hero h1:nth-child(3) span{
-        animation-delay: 2.5s;
-        }
-        
-        #hero .cta{
-        display: inline-block;
-        padding: 10px 30px;
-        color: white;
-        background-color: transparent;
-        border: 2px solid white;
-        font-size: 1.5rem;
-        letter-spacing: .1rem;
-        text-transform: uppercase;
-        margin-top: 30px;
-        transition: .7s ease background-color;
-        transition-property: background-color, color;
-        }
-        
-        #hero .cta:hover{
-        color: white;
-        background-color:  #FA4F7A;
-        border-color:  #FA4F7A;
-        }
-        
-        
-        @keyframes text_reveal_box{
-            50%{
-            width: 100%;
-            left: 0;
-            }    
-            
-            100%{
-            width: 0;
-            left: 100%;
-            }
-        }
-        
-        @keyframes text_reveal{
-            100%{
-            color: white;
-            }    
-        }
-        
-        @keyframes text_reveal_name{
-            100%{
-            color:  #FA4F7A;;
-            font-weight: 500;
-            }    
-        }
+  .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  #hero {
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+  }
 
+  #hero::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    content: "";
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  #hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+  }
+
+  #hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 2.5rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 5s ease forwards;
+    animation-delay: 1s;
+  }
+
+  #hero h1:nth-child(1) {
+    animation-delay: 1s;
+  }
+
+  #hero h1:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  #hero h1:nth-child(3) {
+    animation: text_reveal_name 0.5s ease forwards;
+    animation-delay: 3s;
+  }
+
+  #hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fa4f7a;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.5s;
+  }
+
+  #hero h1:nth-child(1) span {
+    animation-delay: 0.5s;
+  }
+
+  #hero h1:nth-child(2) span {
+    animation-delay: 1.5s;
+  }
+
+  #hero h1:nth-child(3) span {
+    animation-delay: 2.5s;
+  }
+
+  #hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: 0.7s ease background-color;
+    transition-property: background-color, color;
+  }
+
+  #hero .cta:hover {
+    color: white;
+    background-color: #fa4f7a;
+    border-color: #fa4f7a;
+  }
+
+  @keyframes text_reveal_box {
+    50% {
+      width: 100%;
+      left: 0;
+    }
+
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+
+  @keyframes text_reveal {
+    100% {
+      color: white;
+    }
+  }
+
+  @keyframes text_reveal_name {
+    100% {
+      color: #fa4f7a;
+      font-weight: 500;
+    }
+  }
 }
 
+@media screen and (max-width: 768px) {
+  a {
+    text-decoration: none;
+  }
 
-@media screen and (max-width:768px){ 
+  .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    a{
-        text-decoration: none;
-        }
-        
-        
-        
-        
-        .container{
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
-        
-        #hero{
-        background-image: url(../images/hero-bg.png);
-        background-size: cover;
-        background-position: top center;
-        position: relative;
-        z-index: 1;
-        }
-        
-        #hero::after{
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-color: black;
-        content: '';
-        opacity: 0.7;
-        z-index: -1;
-        }
-        
-        #hero .hero{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 50px;
-        justify-content: flex-start;
-        }
-        
-        #hero h1{
-        display: block;
-        width: fit-content;
-        font-size: 2rem;
-        position: relative;
-        color: transparent;
-        animation: text_reveal 5s ease forwards;
-        animation-delay: 1s;
-        }
-        
-        #hero h1:nth-child(1){
-        animation-delay: 1s;  
-        }
-        
-        #hero h1:nth-child(2){
-        animation-delay: 2s;    
-        }
-        
-        #hero h1:nth-child(3){
-        animation: text_reveal_name .5s ease forwards;
-        animation-delay: 3s; 
-        
-        }
-        
-        #hero h1 span{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 0;
-        background-color: #FA4F7A;
-        animation: text_reveal_box 1s ease;
-        animation-delay: .5s;
-        }
-        
-        #hero h1:nth-child(1) span{
-        animation-delay: .5s;
-        }
-        
-        #hero h1:nth-child(2) span{
-        animation-delay: 1.5s;
-        }
-        
-        #hero h1:nth-child(3) span{
-        animation-delay: 2.5s;
-        }
-        
-        #hero .cta{
-        display: inline-block;
-        padding: 10px 30px;
-        color: white;
-        background-color: transparent;
-        border: 2px solid white;
-        font-size: 1rem;
-        letter-spacing: .1rem;
-        text-transform: uppercase;
-        margin-top: 30px;
-        transition: .7s ease background-color;
-        transition-property: background-color, color;
-        }
-        
-        #hero .cta:hover{
-        color: white;
-        background-color: #FA4F7A;
-        border-color: #FA4F7A;
+  #hero {
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+  }
 
-        }
-        
-        
-        @keyframes text_reveal_box{
-            50%{
-            width: 100%;
-            left: 0;
-            }    
-            
-            100%{
-            width: 0;
-            left: 100%;
-            }
-        }
-        
-        @keyframes text_reveal{
-            100%{
-            color: white;
-            }    
-        }
-        
-        @keyframes text_reveal_name{
-            100%{
-            color: #FA4F7A;
-            font-weight: 500;
-            }    
-        }  
+  #hero::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    content: "";
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  #hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+  }
+
+  #hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 5s ease forwards;
+    animation-delay: 1s;
+  }
+
+  #hero h1:nth-child(1) {
+    animation-delay: 1s;
+  }
+
+  #hero h1:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  #hero h1:nth-child(3) {
+    animation: text_reveal_name 0.5s ease forwards;
+    animation-delay: 3s;
+  }
+
+  #hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fa4f7a;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.5s;
+  }
+
+  #hero h1:nth-child(1) span {
+    animation-delay: 0.5s;
+  }
+
+  #hero h1:nth-child(2) span {
+    animation-delay: 1.5s;
+  }
+
+  #hero h1:nth-child(3) span {
+    animation-delay: 2.5s;
+  }
+
+  #hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: 0.7s ease background-color;
+    transition-property: background-color, color;
+  }
+
+  #hero .cta:hover {
+    color: white;
+    background-color: #fa4f7a;
+    border-color: #fa4f7a;
+  }
+
+  @keyframes text_reveal_box {
+    50% {
+      width: 100%;
+      left: 0;
+    }
+
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+
+  @keyframes text_reveal {
+    100% {
+      color: white;
+    }
+  }
+
+  @keyframes text_reveal_name {
+    100% {
+      color: #fa4f7a;
+      font-weight: 500;
+    }
+  }
 }
 
+@media screen and (max-width: 500px) {
+  a {
+    text-decoration: none;
+  }
 
-@media screen and (max-width:500px){
-    a{
-        text-decoration: none;
-        }
-        
-        
-        
-        
-        .container{
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
-        
-        #hero{
-        background-image: url(../images/hero-bg.png);
-        background-size: cover;
-        background-position: top center;
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        }
-        
-        #hero::after{
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-color: black;
-        content: '';
-        opacity: 0.7;
-        z-index: -1;
-        }
-        
-        #hero .hero{
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 50px;
-        justify-content: flex-start;
-        }
-        
-        #hero h1{
-        display: block;
-        width: fit-content;
-        font-size: 1.6rem;
-        position: relative;
-        color: transparent;
-        animation: text_reveal 5s ease forwards;
-        animation-delay: 1s;
-        }
-        
-        #hero h1:nth-child(1){
-        animation-delay: 1s;  
-        }
-        
-        #hero h1:nth-child(2){
-        animation-delay: 2s;    
-        }
-        
-        #hero h1:nth-child(3){
-        animation: text_reveal_name .5s ease forwards;
-        animation-delay: 3s; 
-        
-        }
-        
-        #hero h1 span{
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 0;
-        background-color: #FA4F7A;
-        animation: text_reveal_box 1s ease;
-        animation-delay: .5s;
-        }
-        
-        #hero h1:nth-child(1) span{
-        animation-delay: .5s;
-        }
-        
-        #hero h1:nth-child(2) span{
-        animation-delay: 1.5s;
-        }
-        
-        #hero h1:nth-child(3) span{
-        animation-delay: 2.5s;
-        }
-        
-        #hero .cta{
-        display: inline-block;
-        padding: 10px 30px;
-        color: white;
-        background-color: transparent;
-        border: 2px solid white;
-        font-size: 0.8rem;
-        letter-spacing: .1rem;
-        text-transform: uppercase;
-        margin-top: 30px;
-        transition: .7s ease background-color;
-        transition-property: background-color, color;
-        }
-        
-        #hero .cta:hover{
-        color: white;
-        background-color: #FA4F7A;
-        border-color: #FA4F7A;
-        }
-        
-        
-        @keyframes text_reveal_box{
-            50%{
-            width: 100%;
-            left: 0;
-            }    
-            
-            100%{
-            width: 0;
-            left: 100%;
-            }
-        }
-        
-        @keyframes text_reveal{
-            100%{
-            color: white;
-            }    
-        }
-        
-        @keyframes text_reveal_name{
-            100%{
-            color: #FA4F7A;
-            font-weight: 500;
-            }    
-        }  
+  .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    
+  #hero {
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  #hero::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    content: "";
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  #hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+  }
+
+  #hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 1.6rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 5s ease forwards;
+    animation-delay: 1s;
+  }
+
+  #hero h1:nth-child(1) {
+    animation-delay: 1s;
+  }
+
+  #hero h1:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  #hero h1:nth-child(3) {
+    animation: text_reveal_name 0.5s ease forwards;
+    animation-delay: 3s;
+  }
+
+  #hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #fa4f7a;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.5s;
+  }
+
+  #hero h1:nth-child(1) span {
+    animation-delay: 0.5s;
+  }
+
+  #hero h1:nth-child(2) span {
+    animation-delay: 1.5s;
+  }
+
+  #hero h1:nth-child(3) span {
+    animation-delay: 2.5s;
+  }
+
+  #hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    transition: 0.7s ease background-color;
+    transition-property: background-color, color;
+  }
+
+  #hero .cta:hover {
+    color: white;
+    background-color: #fa4f7a;
+    border-color: #fa4f7a;
+  }
+
+  @keyframes text_reveal_box {
+    50% {
+      width: 100%;
+      left: 0;
+    }
+
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+
+  @keyframes text_reveal {
+    100% {
+      color: white;
+    }
+  }
+
+  @keyframes text_reveal_name {
+    100% {
+      color: #fa4f7a;
+      font-weight: 500;
+    }
+  }
 }
-
-
