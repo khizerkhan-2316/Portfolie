@@ -7,7 +7,8 @@ document.getElementById("mmd").ontouchstart = function () {
   showElement("headingMmd"),
     hideElement("headingDm"),
     showboxElements("mmdProjects"),
-    scrollWindowMobile();
+    scrollWindowMobile(),
+    showElement("hoverCTA");
 };
 document.getElementById("dm").ontouchstart = function () {
   showElement("headingDm"),
@@ -22,7 +23,8 @@ document.getElementById("mmd").onclick = function () {
     hideElement("headingDm"),
     hideElement("datamatikerProjects"),
     showboxElements("mmdProjects"),
-    scrollWindow();
+    scrollWindow(),
+    showElement("hoverCTA");
 };
 document.getElementById("dm").onclick = function () {
   showElement("headingDm"),
@@ -48,10 +50,19 @@ function showboxElements(element) {
 function scrollWindow() {
   window.scrollTo(0, window.innerHeight / 1);
 }
+// test til repitition af functioner!
 
-const hover = () => {
+const test = (firstFunction, secondFunction) => {
+  firstFunction = hover();
+  secondFunction = hoverOut();
+};
+
+// GIF/IMG functioner samt onmouseover - and out.
+const hover = (element) => {
   hideElement("zalando-img");
   showElement("zalando-gif");
+
+  document.getElementById("zalando-gif").style.height = "250px";
 };
 
 const hoverOut = () => {
@@ -59,13 +70,16 @@ const hoverOut = () => {
   showElement("zalando-img");
 };
 
+// on mouse in and out functions:
+
 document.getElementById("zalando-img").onmouseover = function () {
-  hover();
+  hover(), hideElement("hoverCTA");
 };
 
 document.getElementById("zalando-gif").onmouseout = function () {
-  hoverOut();
+  hoverOut(), showElement("hoverCTA");
 };
+
 /*
 function scrollWindowMobile(){
     window.scrollTo(0, window.innerHeight /1);
